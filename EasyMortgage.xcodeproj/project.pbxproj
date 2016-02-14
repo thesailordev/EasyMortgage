@@ -14,6 +14,9 @@
 		4D953FC21C6EB5F50096565A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D953FC01C6EB5F50096565A /* LaunchScreen.storyboard */; };
 		4D953FCD1C6EB5F50096565A /* EasyMortgageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D953FCC1C6EB5F50096565A /* EasyMortgageTests.swift */; };
 		4D953FD81C6EB5F50096565A /* EasyMortgageUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D953FD71C6EB5F50096565A /* EasyMortgageUITests.swift */; };
+		4DCA5DD21C70DDB70074F4A4 /* MortgageCalculations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCA5DD11C70DDB70074F4A4 /* MortgageCalculations.swift */; };
+		4DCA5DD51C70DE3E0074F4A4 /* MortgageData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCA5DD41C70DE3E0074F4A4 /* MortgageData.swift */; };
+		4DCA5DDA1C70DECD0074F4A4 /* MainUserInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCA5DD91C70DECD0074F4A4 /* MainUserInputView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		4D953FD31C6EB5F50096565A /* EasyMortgageUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EasyMortgageUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D953FD71C6EB5F50096565A /* EasyMortgageUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyMortgageUITests.swift; sourceTree = "<group>"; };
 		4D953FD91C6EB5F50096565A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4DCA5DD11C70DDB70074F4A4 /* MortgageCalculations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MortgageCalculations.swift; sourceTree = "<group>"; };
+		4DCA5DD41C70DE3E0074F4A4 /* MortgageData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MortgageData.swift; sourceTree = "<group>"; };
+		4DCA5DD91C70DECD0074F4A4 /* MainUserInputView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainUserInputView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +103,11 @@
 		4D953FB61C6EB5F50096565A /* EasyMortgage */ = {
 			isa = PBXGroup;
 			children = (
+				4DCA5DD81C70DE820074F4A4 /* Routers */,
+				4DCA5DD71C70DE7A0074F4A4 /* Views */,
+				4DCA5DD61C70DE730074F4A4 /* Presenters */,
+				4DCA5DD31C70DE310074F4A4 /* Entities */,
+				4DCA5DD01C70DD940074F4A4 /* Interactors */,
 				4D953FB71C6EB5F50096565A /* AppDelegate.swift */,
 				4D953FB91C6EB5F50096565A /* ViewController.swift */,
 				4D953FBB1C6EB5F50096565A /* Main.storyboard */,
@@ -123,6 +134,44 @@
 				4D953FD91C6EB5F50096565A /* Info.plist */,
 			);
 			path = EasyMortgageUITests;
+			sourceTree = "<group>";
+		};
+		4DCA5DD01C70DD940074F4A4 /* Interactors */ = {
+			isa = PBXGroup;
+			children = (
+				4DCA5DD11C70DDB70074F4A4 /* MortgageCalculations.swift */,
+			);
+			name = Interactors;
+			sourceTree = "<group>";
+		};
+		4DCA5DD31C70DE310074F4A4 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				4DCA5DD41C70DE3E0074F4A4 /* MortgageData.swift */,
+			);
+			name = Entities;
+			sourceTree = "<group>";
+		};
+		4DCA5DD61C70DE730074F4A4 /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Presenters;
+			sourceTree = "<group>";
+		};
+		4DCA5DD71C70DE7A0074F4A4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4DCA5DD91C70DECD0074F4A4 /* MainUserInputView.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		4DCA5DD81C70DE820074F4A4 /* Routers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Routers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,6 +305,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DCA5DD21C70DDB70074F4A4 /* MortgageCalculations.swift in Sources */,
+				4DCA5DD51C70DE3E0074F4A4 /* MortgageData.swift in Sources */,
+				4DCA5DDA1C70DECD0074F4A4 /* MainUserInputView.swift in Sources */,
 				4D953FBA1C6EB5F50096565A /* ViewController.swift in Sources */,
 				4D953FB81C6EB5F50096565A /* AppDelegate.swift in Sources */,
 			);
@@ -484,6 +536,7 @@
 				4D953FDE1C6EB5F50096565A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4D953FDF1C6EB5F50096565A /* Build configuration list for PBXNativeTarget "EasyMortgageTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +545,7 @@
 				4D953FE11C6EB5F50096565A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4D953FE21C6EB5F50096565A /* Build configuration list for PBXNativeTarget "EasyMortgageUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +554,7 @@
 				4D953FE41C6EB5F50096565A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
