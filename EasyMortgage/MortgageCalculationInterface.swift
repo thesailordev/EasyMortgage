@@ -1,5 +1,5 @@
 //
-//  MainUserInputView.swift
+//  MortgageCalculationInterface.swift
 //  EasyMortgage
 //
 //  Created by John Lawrence on 2/14/16.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol MainUserInputView {
+protocol MortgageCalculationInterface {
     func didAddValue()
     func didTapCalculate()
 }
