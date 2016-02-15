@@ -10,13 +10,20 @@ import UIKit
 
 class MortgageCalculations: NSObject {
 
-    // Could replace these inputs with a Mortgage data struct
-    func totalInterestForMortgage(rate: Double, length: Int, andAmount amount: Int) {
+    //TODO: Could replace these inputs with a Mortgage data struct
+    func totalInterestForMortgage(rate: Double, length: Int, andAmount amount: Int) -> Double {
+        let monthlyPayment = monthlyPaymentFor(rate, length: length, andAmount: amount)
+        let totalAmountOfAllPayments = monthlyPayment * Double(length)
 
+        return totalAmountOfAllPayments - Double(amount)
     }
 
-    func monthlyPaymentFor(rate: Double, length: Int, andAmount amount: Int) {
+    func monthlyPaymentFor(rate: Double, length: Int, andAmount amount: Int) -> Double {
+        let apr = rate / 12
+        let totalAmountOfLoan = Double(amount)
+        let lengthOfLoanInMonths = Double(length)
 
+        return totalAmountOfLoan * (pow(apr * (1 + apr), lengthOfLoanInMonths) / (pow(1 + apr, lengthOfLoanInMonths) - 1))
     }
     
 }
